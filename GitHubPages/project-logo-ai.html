@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logo AI | Tony To</title>
+    <meta
+      name="description"
+      content="Logo AI ??an AI logo generation app using Firebase and Alibaba Cloud AI to turn user prompts into final logo images."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">
+          <span class="logo-mark">TT</span>
+          <span class="logo-text">Tony To</span>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#projects-mobile-apps">Projects</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <a href="index.html#projects-mobile-apps" class="btn-link"
+            >&larr; Back to Projects</a
+          >
+          <h1 class="section-title" style="margin-top: 18px">Logo AI</h1>
+          <p class="section-intro">
+            An AI logo generation app using Firebase as backend to store
+            notification data and API keys. Users send prompts to Alibaba Cloud
+            AI to generate final logo images.
+          </p>
+
+          <div class="project-grid project-grid--mobile-portrait" style="margin-top: 22px">
+            <article class="project-card project-card--video-portrait">
+              <h4>Overview</h4>
+              <p>
+                Logo AI streamlines the process of creating custom logos from
+                simple text prompts. Firebase manages configuration, API keys,
+                and notification data, while Alibaba Cloud AI generates logo
+                concepts that users can pick from and refine.
+              </p>
+            </article>
+
+            <article class="project-card">
+              <h4>Demo Video</h4>
+              <p>
+                The demo video shows how users write prompts, submit them to the
+                AI backend, and browse through multiple generated logo options.
+              </p>
+            <div class="video-embed video-embed-portrait">
+              <video
+                width="560"
+                height="315"
+                controls
+                autoplay
+                muted
+                playsinline
+                preload="metadata"
+              >
+                <source src="Mobile App/Logo Ai.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Tony To. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
+

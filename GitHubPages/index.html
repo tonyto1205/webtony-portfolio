@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tony To | Game & App Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Hong Kong-based Unity game and app designer Tony To. Cross-platform games, mobile apps, and 3D work."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header" id="home">
+      <div class="container header-inner">
+        <div class="logo">
+          <span class="logo-mark">TT</span>
+          <span class="logo-text">Tony To</span>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="hero-kicker">Unity Game & App Designer</p>
+            <h1 id="hero-title">Hi, I’m Tony To.</h1>
+            <p class="hero-subtitle">
+              A Hong Kong-based cross-platform Unity game designer focusing on
+              system, UI, and level design — with additional experience building
+              mobile applications.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn-primary">View Projects</a>
+              <a href="#contact" class="btn-secondary">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-meta">
+            <div class="hero-tag">Based in Hong Kong</div>
+            <div class="hero-tag">Cross-platform Unity</div>
+            <div class="hero-tag">Mobile & PC & Steam</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div class="container">
+          <h2 class="section-title">About</h2>
+          <p class="section-intro">
+            I am a Hong Kong-based cross-platform Unity game designer,
+            specializing in system and UI design as well as level design. I also
+            occasionally develop applications, working across mobile, PC, and
+            3D tools like 3ds Max and Blender.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects-section">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-intro">
+            Selected work across 3D, mobile apps, commercial games, school
+            projects, and Steam releases.
+          </p>
+
+          <div class="project-category" id="projects-3dsmax">
+            <div class="project-category-header">
+              <h3>3ds Max</h3>
+              <p>
+                Visual experiments using particle systems, FumeFX, and lighting
+                effects.
+              </p>
+            </div>
+            <div class="project-grid">
+              <article class="project-card">
+                <a href="project-3ds-max-fx-demo.html" class="project-card-link">
+                  <h4>3ds Max FX Demo</h4>
+                  <p>
+                    A 3ds Max scene showcasing particle systems, FumeFX
+                    simulations, and dramatic lighting setups.
+                  </p>
+                </a>
+              </article>
+            </div>
+          </div>
+
+          <div class="project-category" id="projects-mobile-apps">
+            <div class="project-category-header">
+              <h3>Mobile Apps</h3>
+              <p>
+                Cross-platform mobile applications focusing on productivity,
+                education, and AI-powered tools.
+              </p>
+            </div>
+            <div class="project-grid">
+              <article
+                class="project-card"
+                onclick="window.location.href='project-daily-app.html'"
+              >
+                <h4>Daily App</h4>
+                <p>
+                  A simple daily task tracking app where users can mark tasks
+                  and mark them as completed once finished.
+                </p>
+              </article>
+
+              <article
+                class="project-card"
+                onclick="window.location.href='project-dse-app.html'"
+              >
+                <h4>DSE升學易 (DSE)</h4>
+                <p>
+                  A JUPAS calculator app where users enter their own public exam
+                  scores, save them to Firebase, and search and favorite
+                  programs for quick comparison.
+                </p>
+              </article>
+
+              <article
+                class="project-card"
+                onclick="window.location.href='project-home-ai-room-design.html'"
+              >
+                <h4>Home AI - Room Design</h4>
+                <p>
+                  An AI-powered room and home redesign app. Uses Firebase to
+                  store notification data and API keys, then sends user images
+                  to Gemini AI to generate redesigned interiors and exteriors.
+                </p>
+              </article>
+
+              <article
+                class="project-card"
+                onclick="window.location.href='project-kanji-practice-app.html'"
+              >
+                <h4>Kanji Practice App</h4>
+                <p>
+                  A Kanji exam practice app that uses Google Sheets to export
+                  CSV data, then reads questions and answers from the CSV for
+                  efficient spaced review.
+                </p>
+              </article>
+
+              <article
+                class="project-card"
+                onclick="window.location.href='project-logo-ai.html'"
+              >
+                <h4>Logo AI</h4>
+                <p>
+                  An AI logo generation app using Firebase as backend to store
+                  notification data and API keys. Users send prompts to Alibaba
+                  Cloud AI to generate final logo images.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <div class="project-category" id="projects-mobile-games">
+            <div class="project-category-header">
+              <h3>Mobile Games</h3>
+              <p>
+                Commercial mobile games built with Unity, integrating live
+                backend services, analytics, and monetization.
+              </p>
+            </div>
+            <div class="project-grid">
+              <article
+                class="project-card"
+                onclick="window.location.href='project-crush-island.html'"
+              >
+                <h4>Crush Island: Choices &amp; Love</h4>
+                <p>
+                  A reality TV-style romance game. Stories are authored in
+                  Google Sheets, exported as CSV, converted to JSON, and served
+                  via Bunny CDN together with Spine characters. Includes
+                  Flowise-powered chat rooms plus Firebase, Facebook, and AdMob
+                  SDK integration.
+                </p>
+              </article>
+
+              <article
+                class="project-card"
+                onclick="window.location.href='project-dream-decor.html'"
+              >
+                <h4>Dream Decor: Home Makeover</h4>
+                <p>
+                  A 3D home makeover game. Modified 3D models in Blender,
+                  implemented an inventory/backpack system and a PlayFab
+                  backend, plus cloud scripts for matchmaking and missions.
+                  Level scenes use cameras, effects, and lighting stored as
+                  addressables and uploaded to Bunny.
+                </p>
+              </article>
+
+              <article
+                class="project-card"
+                onclick="window.location.href='project-fight-game.html'"
+              >
+                <h4>Fight Game</h4>
+                <p>
+                  A combat-focused prototype where I created special effects and
+                  one-hit kill animations to emphasize powerful attacks.
+                </p>
+              </article>
+
+              <article
+                class="project-card"
+                onclick="window.location.href='project-sticker-game.html'"
+              >
+                <h4>Sticker Game</h4>
+                <p>
+                  A system for saving sticker images and uploading them as
+                  addressable assets to Bunny, exploring different approaches to
+                  building a flexible sticker collection system.
+                </p>
+              </article>
+
+              <article
+                class="project-card"
+                onclick="window.location.href='project-moonlight-ascension.html'"
+              >
+                <h4>Moonlight Ascension - Werewolf</h4>
+                <p>
+                  A werewolf romance visual novel. Story data is managed in
+                  Google Sheets, exported as CSV, converted to JSON, and hosted
+                  with Spine characters on Bunny. Chat rooms use Flowise AI.
+                  Implemented upgrade card and Spine-based gacha systems, with
+                  data stored on PlayFab and Bunny.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <div class="project-category" id="projects-school-mobile">
+            <div class="project-category-header">
+              <h3>School Mobile Games</h3>
+              <p>Unity prototypes built as school projects for mobile.</p>
+            </div>
+            <div class="project-grid">
+              <article
+                class="project-card"
+                onclick="window.location.href='project-puzzle-game.html'"
+              >
+                <h4>Puzzle Game</h4>
+                <p>
+                  A casual puzzle game where players connect the last three
+                  identical birds, each with different effects and behaviors.
+                </p>
+              </article>
+
+              <article
+                class="project-card"
+                onclick="window.location.href='project-rpg-game.html'"
+              >
+                <h4>RPG Game</h4>
+                <p>
+                  A school RPG project where I handled level design, visual
+                  effects, player controller logic, and camera setup.
+                </p>
+              </article>
+
+              <article
+                class="project-card"
+                onclick="window.location.href='project-shooter-game.html'"
+              >
+                <h4>Shooter Game</h4>
+                <p>
+                  A side-scrolling shooter where I implemented the bullet
+                  system, horizontal level layout, and player controller.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <div class="project-category" id="projects-school-pc">
+            <div class="project-category-header">
+              <h3>School PC Games</h3>
+              <p>PC-focused school projects exploring FPS gameplay.</p>
+            </div>
+            <div class="project-grid">
+              <article
+                class="project-card"
+                onclick="window.location.href='project-fps-game.html'"
+              >
+                <h4>FPS Game</h4>
+                <p>
+                  A first-person shooter prototype where I designed the level
+                  layout and created the puzzle system within the environment.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <div class="project-category" id="projects-steam">
+            <div class="project-category-header">
+              <h3>Steam</h3>
+              <p>Commercial PC game released on Steam.</p>
+            </div>
+            <div class="project-grid">
+              <article
+                class="project-card"
+                onclick="window.location.href='project-bloody-roses.html'"
+              >
+                <h4>Bloody Roses</h4>
+                <p>
+                  A horror game on Steam where I was responsible for visual
+                  effects, character and environment animations, and sound
+                  effects to build an intense atmosphere.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://store.steampowered.com/app/3037170/Bloody_Roses/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-link"
+                    >View on Steam</a
+                  >
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-intro">
+            I’m open to collaboration, freelance work, and full-time roles in
+            game and app development.
+          </p>
+          <div class="contact-grid">
+            <div>
+              <h3>Get in touch</h3>
+              <ul class="contact-list">
+                <li>
+                  <span>Email</span>
+                  <a href="mailto:to873jp@gmail.com">to873jp@gmail.com</a>
+                </li>
+                <li>
+                  <span>Phone</span>
+                  <a href="tel:+85267402121">+852 6740 2121</a>
+                </li>
+                <li>
+                  <span>Location</span>
+                  <span>Hong Kong</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Tony To. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
+

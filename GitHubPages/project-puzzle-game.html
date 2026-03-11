@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puzzle Game | Tony To</title>
+    <meta
+      name="description"
+      content="Puzzle Game ??a casual prototype where players connect three identical birds, each with different effects and behaviors."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">
+          <span class="logo-mark">TT</span>
+          <span class="logo-text">Tony To</span>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#projects-school-mobile">Projects</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <a href="index.html#projects-school-mobile" class="btn-link"
+            >&larr; Back to Projects</a
+          >
+          <h1 class="section-title" style="margin-top: 18px">Puzzle Game</h1>
+          <p class="section-intro">
+            A casual puzzle game where players connect the last three identical
+            birds, each with different effects and behaviors.
+          </p>
+
+          <div
+            class="project-grid project-grid--mobile-portrait"
+            style="margin-top: 22px"
+          >
+            <article class="project-card">
+              <h4>Overview</h4>
+              <p>
+                This school project focuses on designing satisfying chain
+                reactions and visual feedback as players connect matching birds.
+                Different bird types trigger different effects, encouraging
+                planning and experimentation.
+              </p>
+            </article>
+
+            <article class="project-card project-card--video-portrait">
+              <h4>Demo Video</h4>
+              <p>
+                The demo video shows core gameplay, bird effects, and how levels
+                escalate in difficulty.
+              </p>
+              <div class="video-embed video-embed-portrait">
+                <video
+                  width="560"
+                  height="315"
+                  controls
+                  autoplay
+                  muted
+                  playsinline
+                  preload="metadata"
+                >
+                  <source
+                    src="School Mobile Game/Puzzle Game.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Tony To. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
+

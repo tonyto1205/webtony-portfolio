@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticker Game | Tony To</title>
+    <meta
+      name="description"
+      content="Sticker Game ??a system for saving sticker images and uploading them as addressable assets to Bunny for a flexible collection system."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">
+          <span class="logo-mark">TT</span>
+          <span class="logo-text">Tony To</span>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#projects-mobile-games">Projects</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <a href="index.html#projects-mobile-games" class="btn-link"
+            >&larr; Back to Projects</a
+          >
+          <h1 class="section-title" style="margin-top: 18px">Sticker Game</h1>
+          <p class="section-intro">
+            A system for saving sticker images and uploading them as addressable
+            assets to Bunny, exploring different approaches to building a
+            flexible sticker collection system.
+          </p>
+
+          <div class="project-grid project-grid--mobile-portrait" style="margin-top: 22px">
+            <article class="project-card">
+              <h4>Overview</h4>
+              <p>
+                Sticker Game focuses on backend and content pipeline design
+                rather than pure gameplay. The project experiments with how
+                users create, manage, and sync sticker assets, using addressable
+                assets hosted on Bunny to keep downloads small and content
+                easily expandable.
+              </p>
+            </article>
+
+            <article class="project-card project-card--video-portrait">
+              <h4>Demo Video</h4>
+              <p>
+                The demo showcases creating sticker collections, saving images,
+                and how new stickers can be delivered without full app updates.
+              </p>
+              <div class="video-embed video-embed-portrait">
+                <video
+                  width="560"
+                  height="315"
+                  controls
+                  autoplay
+                  muted
+                  playsinline
+                  preload="metadata"
+                >
+                  <source src="Mobile Game/Sticker Game.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Tony To. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
+
