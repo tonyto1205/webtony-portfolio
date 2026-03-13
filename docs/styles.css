@@ -119,7 +119,7 @@ img {
 }
 
 .site-nav a.active {
-  background: var(--accent-soft);
+  background: transparent;
   color: var(--accent);
 }
 
@@ -289,6 +289,11 @@ img {
   margin-top: 16px;
 }
 
+.project-grid--stacked {
+  grid-template-columns: minmax(0, 1fr);
+  row-gap: 16px;
+}
+
 .project-grid--mobile-portrait {
   grid-template-columns: minmax(0, 1.6fr) minmax(0, 360px);
   align-items: flex-start;
@@ -323,6 +328,59 @@ img {
   cursor: pointer;
 }
 
+.project-card-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  background: linear-gradient(
+    135deg,
+    rgba(57, 168, 255, 0.95),
+    rgba(94, 208, 255, 0.9)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.75);
+  flex-shrink: 0;
+  overflow: hidden;
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+}
+
+.project-card-icon-initial {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #020512;
+  text-transform: uppercase;
+}
+
+.project-card-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.project-card-icon--image .project-card-icon-initial {
+  display: none;
+}
+
+/* 仅 Bloody Roses 使用：横向小封面（更宽），画面重点偏左 */
+.project-card-icon--wide {
+  width: 148px;
+  height: 72px;
+}
+
+.project-card-icon--wide img {
+  object-fit: cover;
+  object-position: left center;
+}
+
+.project-card:hover .project-card-icon {
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.85);
+}
+
 .project-card h4 {
   margin: 0;
   font-size: 16px;
@@ -340,6 +398,11 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+}
+
+.project-links--top {
+  margin-top: 12px;
+  margin-bottom: 10px;
 }
 
 .video-embed {
@@ -384,6 +447,103 @@ img {
 
 .project-card--video-portrait .video-embed-portrait {
   margin-top: 10px;
+}
+
+.gameplay-gallery {
+  margin-top: 18px;
+}
+
+.gameplay-gallery-title {
+  font-size: 15px;
+  margin: 0 0 8px;
+  color: var(--text-muted);
+}
+
+.gameplay-gallery-view {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gameplay-gallery-images {
+  flex: 1;
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Firefox */
+}
+
+.gameplay-gallery-images::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.gameplay-gallery-item {
+  margin: 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.75);
+  background: #000;
+  flex: 0 0 auto;
+  width: 220px;
+  scroll-snap-align: start;
+}
+
+.gameplay-gallery--steam .gameplay-gallery-item {
+  width: clamp(260px, 28vw, 360px);
+}
+
+.gameplay-gallery--steam .gameplay-gallery-item img {
+  max-height: 420px;
+}
+
+.gameplay-gallery-item img {
+  width: 100%;
+  height: auto;
+  max-height: 340px;
+  object-fit: contain;
+  transition: transform 0.22s ease, opacity 0.22s ease;
+}
+
+.gameplay-gallery-item:hover img {
+  transform: scale(1.03);
+  opacity: 0.96;
+}
+
+.gameplay-gallery-nav {
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  border: 1px solid var(--border-subtle);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0;
+  transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease,
+    transform 0.1s ease;
+}
+
+.gameplay-gallery-nav:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--text);
+  border-color: rgba(64, 179, 255, 0.6);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+  .gameplay-gallery-view {
+    gap: 6px;
+  }
+
+  .gameplay-gallery-item img {
+    max-height: 220px;
+  }
 }
 
 @media (max-width: 768px) {

@@ -50,24 +50,57 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   if ("IntersectionObserver" in window) {
+    const headerOffset = header ? header.offsetHeight : 64;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           const id = entry.target.id;
           const link = linkMap.get(id);
           if (!link) return;
-          if (entry.isIntersecting && entry.intersectionRatio >= 0.4) {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.25) {
             navLinks.forEach((l) => l.classList.remove("active"));
             link.classList.add("active");
           }
         });
       },
       {
-        threshold: 0.4,
+        threshold: 0.25,
+        rootMargin: `-${headerOffset + 16}px 0px -55% 0px`,
       }
     );
 
     sections.forEach((section) => observer.observe(section));
   }
+
+  const galleries = document.querySelectorAll(".gameplay-gallery");
+  galleries.forEach((gallery) => {
+    const track = gallery.querySelector(".gameplay-gallery-images");
+    if (!track) return;
+    const items = track.querySelectorAll(".gameplay-gallery-item");
+    if (!items.length) return;
+
+    const prevBtn = gallery.querySelector(".gameplay-gallery-nav--prev");
+    const nextBtn = gallery.querySelector(".gameplay-gallery-nav--next");
+
+    const scrollAmount = () => track.clientWidth * 0.6;
+
+    if (prevBtn) {
+      prevBtn.addEventListener("click", () => {
+        track.scrollBy({
+          left: -scrollAmount(),
+          behavior: "smooth",
+        });
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener("click", () => {
+        track.scrollBy({
+          left: scrollAmount(),
+          behavior: "smooth",
+        });
+      });
+    }
+  });
 });
 
